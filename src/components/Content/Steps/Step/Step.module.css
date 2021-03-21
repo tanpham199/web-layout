@@ -1,0 +1,20 @@
+.WorksStep {
+    margin-bottom: 50px;
+}
+
+.WorksStep:last-of-type {
+    margin-bottom: 80px;
+}
+
+.WorksStep div {
+    color: #e67e22;
+    font-size: 150%;
+    height: 54px;
+    width: 54px;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 25px;
+    float: left;
+    padding: 5px;
+}

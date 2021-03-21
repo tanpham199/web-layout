@@ -1,0 +1,11 @@
+.ButtonImage {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.ButtonImage img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
