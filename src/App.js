@@ -1,10 +1,12 @@
 import './App.css';
+import Container from './components/Container/Container';
+import Header from './components/Header/Header';
 
 const App = () => {
     return (
         <>
-            <div>Hello</div>
-            <div>World</div>
+            <Header />
+            <Container></Container>
         </>
     );
 };

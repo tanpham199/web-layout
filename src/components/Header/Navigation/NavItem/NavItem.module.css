@@ -1,0 +1,21 @@
+.NavItem {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.NavItem > a:link,
+.NavItem > a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.NavItem > a:hover,
+.NavItem > a:active {
+    border-bottom: 2px solid #e67e22;
+}
