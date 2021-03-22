@@ -42,12 +42,7 @@ const Features = () => (
         </Row>
         <Row>
             {featureContents.map((feature, i) => (
-                <Feature
-                    key={`feature ${i.toString()}`}
-                    icon={feature.icon}
-                    title={feature.title}
-                    desc={feature.desc}
-                />
+                <Feature key={`feature ${i.toString()}`} {...feature} />
             ))}
         </Row>
     </section>

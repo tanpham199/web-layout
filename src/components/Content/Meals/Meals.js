@@ -51,12 +51,12 @@ const Meals = () => {
         <section className={styles.Meals}>
             <ul className={`clearfix ${styles.MealsShowcase}`}>
                 {firstMealsContent.map((meal, i) => (
-                    <Meal key={`firstMeals ${i.toString()}`} src={meal.src} alt={meal.alt} />
+                    <Meal key={`firstMeals ${i.toString()}`} {...meal} />
                 ))}
             </ul>
             <ul className={`clearfix ${styles.MealsShowcase}`}>
                 {secondMealsContent.map((meal, i) => (
-                    <Meal key={`secondMeals ${i.toString()}`} src={meal.src} alt={meal.alt} />
+                    <Meal key={`secondMeals ${i.toString()}`} {...meal} />
                 ))}
             </ul>
         </section>

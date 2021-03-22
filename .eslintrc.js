@@ -18,5 +18,6 @@ module.exports = {
         'react/state-in-constructor': 0,
         'react/prop-types': 0,
         'no-unused-vars': 'warn',
+        'react/jsx-props-no-spreading': 0,
     },
 };
