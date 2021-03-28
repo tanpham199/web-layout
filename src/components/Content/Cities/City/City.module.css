@@ -38,3 +38,14 @@
 .IconSmallTwitter:hover {
     color: #00acee;
 }
+
+@media only screen and (max-width: 1023px) {
+    .IconSmall {
+        width: 17px;
+        margin-right: 5px;
+    }
+
+    .CityFeature {
+        font-size: 90%;
+    }
+}

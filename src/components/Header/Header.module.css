@@ -14,3 +14,16 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
+@media only screen and (max-width: 1200px) {
+    .HeroTextBox {
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .HeroTextBox {
+        padding: 0 4%;
+    }
+}

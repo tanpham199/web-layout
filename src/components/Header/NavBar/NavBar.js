@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NavItem from './NavItem/NavItem';
 import styles from './NavBar.module.css';
 import logoWhite from './logo-white.png';
@@ -26,6 +26,11 @@ const navItemContent = [
 
 const NavBar = ({ sticky }) => {
     const navClass = sticky ? styles.Sticky : '';
+    const [visible, setVisible] = useState(false);
+    const onToggleNavItems = () => {
+        setVisible(!visible);
+    };
+    const navMenuClass = visible ? `${styles.NavMenu} ${styles.Show}` : styles.NavMenu;
     return (
         <nav className={navClass}>
             <Row>
@@ -33,15 +38,19 @@ const NavBar = ({ sticky }) => {
                 <a href="#header">
                     <img src={logo} alt="Omnifood logo" className={styles.LogoBlack} />
                 </a>
-                <ul className={styles.NavMenu}>
+                <ul className={navMenuClass}>
                     {navItemContent.map((content, i) => (
                         <NavItem key={`navItem ${i.toString()}`} href={content.href}>
                             {content.text}
                         </NavItem>
                     ))}
                 </ul>
-                <button className={styles.MobileNavBarIcon} type="button">
-                    <i className="ion-navicon-round" />
+                <button
+                    className={styles.MobileNavBarIcon}
+                    type="button"
+                    onClick={onToggleNavItems}
+                >
+                    {visible ? <ion-icon name="close-outline" /> : <ion-icon name="menu-outline" />}
                 </button>
             </Row>
         </nav>

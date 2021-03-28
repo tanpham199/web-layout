@@ -2,3 +2,15 @@
     max-width: 1140px;
     margin: 0 auto;
 }
+
+@media only screen and (max-width: 1200px) {
+    .Row {
+        padding: 0 2%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .Row {
+        padding: 0 4%;
+    }
+}
